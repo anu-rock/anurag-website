@@ -1,0 +1,35 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<h2>Who am I?</h2>
+			<p>
+				Hey there 👋 I'm Anurag Bhandari.
+				I have been a generalist software engineer for more than a decade. From services to startup to research to consulting to product, I've been collecting and applying my skills pretty diversely. I've also authored two books on programming.
+				I started my "enterprise" journey with .NET, switched over to JavaScript,
+				and am currently heavy in PHP.
+			</p>
+			<h2>What makes me tick?</h2>
+			<p>
+				I subscribe to the jack of all trades philosophy.
+				I strongly believe that to succeed in the ever-changing
+				tech landscape of today, a software developer must constantly
+				learn new skills as required at work.
+				Gone are the days when specializing in one technology or
+				stack could propel you in a traditional technical hierarchy.
+			</p>
+			</main>
+		<Footer />
+	</body>
+</html>
